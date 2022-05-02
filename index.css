@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color: black;
+    opacity: 0.8;
+    padding: 10px;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+}
+
+li{
+    margin-left: 80px;
+    font-size: 20px;
+}
+li a{
+    text-decoration: none;
+    color: bisque;
+    padding: 5px;
+}
+li a:hover{
+    background-color: bisque;
+    color: black;
+    border-radius: 10px;
+}
+.container{
+    margin-top: 70px;
+}
+h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+}
+
+/* gallery */
+.contain{
+    /* max-width: 1200px;
+    margin: auto;
+    background-color: grey;
+    overflow: auto; */
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.type{
+    margin: 30px 5px;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px;
+}
+.gallery{
+    margin: 10px 20px;
+    /* border: 2px solid black; */
+    width: 400px;
+    text-align: center;
+    /* border: 2px solid red;
+    float: left;
+    width: 350px; */
+    
+    
+}
+.gallery img{
+    width: 100%;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+.gallery img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0 0 10px;
+}
+.desc{
+    padding: 15px;
+    text-align: center;
+}
+.btnl{
+    padding: 10px;
+    background-color: skyblue;
+    border-radius: 40%;
+    color: black;
+}
+.btnl:hover{
+    background-color: black;
+    color: skyblue;
+    cursor: pointer;
+}
+.btnd{
+    padding: 10px;
+    background-color: red;
+    border-color: antiquewhite;
+    border-radius: 50%;
+    color: antiquewhite;
+}
+.btnd:hover{
+    color: red;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+.footer{
+    background-color: black;
+    text-align: center;
+    color: beige;
+}
+.footer p{
+    display: inline;
+    margin-left: 10px;
+}
+
+/* media query  */
+@media only screen and (max-width:800px){
+    
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        overflow-y: hidden;
+    }
+    li{
+        margin: 0px;
+    }
+    
+    .gallery{
+        width: 100%;
+        height: auto;
+    }
+    .gallery img{
+        width: 100%;
+        height: 200px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .footer{
+        font-size: small;
+    }
+}
